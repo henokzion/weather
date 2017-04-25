@@ -33,7 +33,7 @@ weatherApp.controller('forcastController', function($scope, city, $resource, $ro
 
     $scope.days = $routeParams.days || 2;
     
-    $scope.weatherAPI = $resource ("http://api.openweathermap.org/data/2.5/forecast/daily");
+    $scope.weatherAPI = $resource ("https://api.openweathermap.org/data/2.5/forecast/daily");
 
     $scope.weatherResult = $scope.weatherAPI.get({
         q: $scope.city, cnt: $scope.days , appid :  "5a9945a7e950ffdd758cb240bc328b8e"
