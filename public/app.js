@@ -36,7 +36,7 @@ weatherApp.controller('forcastController', function($scope, city, $resource, $ro
     $scope.weatherAPI = $resource ("https://api.openweathermap.org/data/2.5/forecast/daily");
 
     $scope.weatherResult = $scope.weatherAPI.get({
-        q: $scope.city, cnt: $scope.days , appid :  "5a9945a7e950ffdd758cb240bc328b8e"
+        q: $scope.city, cnt: $scope.days , appid :  "e9120831361a04f0b09468051583643f"
     });
 
     $scope.convertToCelius = function(temp){
