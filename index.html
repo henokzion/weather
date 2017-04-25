@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.4/angular-resource.min.js"></script>
+        <script src="./app.js"></script>
+        <style>
+            .navbar{
+                padding-left: 50px;
+                padding-right: 50px;
+                border-radius: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">Angular Weather</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li> <a href=""><i class="glyphicon glyphicon-home"></i> home</a> </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div ng-view>
+                
+            </div> 
+        </div> 
+             
+        
+    </body>
+
+</html>
